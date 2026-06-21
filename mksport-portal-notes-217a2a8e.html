@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mk体育 · 稳定入口与使用说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f0f2f5;
+            color: #1e1e2a;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .page {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        /* 开场区 — 叙事句 */
+        .hero {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero .opening {
+            font-size: 1.6rem;
+            font-weight: 450;
+            letter-spacing: 0.02em;
+            color: #2c3e50;
+            padding: 1.2rem 1rem 0.6rem;
+            border-bottom: 1px solid #dce1e7;
+            display: inline-block;
+        }
+
+        .hero .sub-line {
+            font-size: 1rem;
+            color: #4f5b68;
+            margin-top: 0.6rem;
+            background: #e6eaef;
+            display: inline-block;
+            padding: 0.2rem 1.2rem;
+            border-radius: 20px;
+        }
+
+        /* 卡片通用设计 */
+        .card {
+            background: #ffffff;
+            border: 1px solid #e1e6ed;
+            border-radius: 20px;
+            padding: 1.8rem 2rem;
+            margin-bottom: 1.8rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+            transition: box-shadow 0.15s;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 550;
+            margin-bottom: 0.75rem;
+            color: #1e2a36;
+            border-left: 4px solid #6f8fa5;
+            padding-left: 0.8rem;
+        }
+
+        .card p {
+            margin-bottom: 1rem;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 承接段落 · 稳定入口说明 */
+        .entry-text {
+            background: #f7f9fc;
+            border-radius: 14px;
+            padding: 1rem 1.4rem;
+            margin: 1.2rem 0 0.2rem;
+            border-left: 4px solid #8aa2b9;
+        }
+
+        /* 特点列表——柔和样式 */
+        .feature-list {
+            list-style: none;
+            margin: 1rem 0 0.2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .feature-list li {
+            background: #f4f6fa;
+            border: 1px solid #dee4ec;
+            border-radius: 40px;
+            padding: 0.4rem 1.2rem;
+            font-size: 0.95rem;
+            color: #1f2b39;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        .feature-list li::before {
+            content: "·";
+            font-weight: 600;
+            margin-right: 0.4rem;
+            color: #6f8fa5;
+        }
+
+        /* 温和结尾 */
+        .closing-note {
+            background: #eef1f6;
+            border: 1px solid #d3dbe5;
+            border-radius: 20px;
+            padding: 1.6rem 2rem;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+
+        .closing-note p {
+            margin-bottom: 0.5rem;
+        }
+
+        .closing-note .small-meta {
+            font-size: 0.85rem;
+            color: #5b6a7a;
+            border-top: 1px solid #ced6e0;
+            padding-top: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
+        /* 链接样式 */
+        a {
+            color: #285577;
+            text-decoration: none;
+            border-bottom: 1px dashed #9bb1c3;
+            transition: border-color 0.1s;
+        }
+
+        a:hover {
+            border-bottom: 1px solid #285577;
+        }
+
+        /* 响应式细节 */
+        @media (max-width: 600px) {
+            body {
+                padding: 1.2rem 0.8rem;
+            }
+            .card {
+                padding: 1.2rem 1.2rem;
+            }
+            .hero .opening {
+                font-size: 1.35rem;
+            }
+            .feature-list {
+                gap: 0.5rem;
+            }
+            .feature-list li {
+                font-size: 0.88rem;
+                padding: 0.3rem 1rem;
+            }
+            .closing-note {
+                padding: 1.2rem 1rem;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .hero .opening {
+                font-size: 1.2rem;
+            }
+            .card-title {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- 开场短句 -->
+    <div class="hero">
+        <div class="opening">一个经过整理的页面，关于一个稳定的入口。</div>
+        <div class="sub-line">mk体育 · 说明与指引</div>
+    </div>
+
+    <!-- 承接段落 + 稳定入口说明 -->
+    <div class="card">
+        <div class="card-title">入口的定位</div>
+        <p>
+            当你需要访问 <a href="https://mksport-portal.com">mk体育</a> 时，最直接的方式就是记住它的地址。
+            这个站点在设计之初就明确了自身的角色：作为信息与服务的汇聚处，它并不追求喧嚣的包装，而是更倾向于提供一种可靠、一致的访问体验。
+        </p>
+        <div class="entry-text">
+            <strong>稳定入口的含义：</strong> 一个不会频繁变更的主页，减少不必要的跳转和记忆负担。
+            <span style="display: inline-block; margin-left: 0.3rem;">→</span> 你可以将 <a href="https://mksport-portal.com">mk体育</a> 视为一个固定的起点，日常使用中不需要反复寻找新的路径。
+        </div>
+        <p style="margin-top: 0.8rem;">
+            下面的几个特点，可以帮助你更快理解这个站点的结构。
+        </p>
+    </div>
+
+    <!-- 特点列表卡片 -->
+    <div class="card">
+        <div class="card-title">页面特点一览</div>
+        <ul class="feature-list">
+            <li>清晰的功能分区</li>
+            <li>一致的版式与导航</li>
+            <li>适配移动端与桌面</li>
+            <li>信息更新有迹可循</li>
+            <li>减少不必要的外部链接</li>
+        </ul>
+        <p style="margin-top: 1.2rem;">
+            这些设计并不是为了堆砌功能，而是希望你在每次登录 <a href="https://mksport-portal.com">mk体育</a> 时，能更快找到自己需要的部分。
+            页面结构保持克制，不会因为频繁调整而让人感到陌生。
+        </p>
+    </div>
+
+    <!-- 使用场景 + 温和提示 (叙事承接) -->
+    <div class="card">
+        <div class="card-title">常见的使用场景</div>
+        <p>
+            很多人把 <a href="https://mksport-portal.com">mk体育</a> 当作每日查看的主页，因为它的加载速度比较稳定，内容区块的布局也相对固定。
+            无论是通过电脑浏览器还是手机浏览器，页面都会根据屏幕尺寸做自适应，不需要手动缩放。
+        </p>
+        <p>
+            如果你需要向朋友推荐一个统一的访问点，直接给他们这个地址即可。站点本身不依赖第三方中间页，也没有隐藏的跳转链。
+        </p>
+        <div style="background: #f3f6fa; border-radius: 14px; padding: 0.6rem 1.2rem; margin-top: 0.6rem; border: 1px solid #dce3ec;">
+            <span style="font-weight: 500;">一个小提示：</span> 首次访问后，可以考虑将页面添加至浏览器书签，这样后续打开会更快捷。
+        </div>
+    </div>
+
+    <!-- FAQ摘要 (克制, 非诱导) -->
+    <div class="card">
+        <div class="card-title">常见疑问摘要</div>
+        <p><strong>Q：</strong> 这个页面会频繁变更地址吗？<br>
+            <strong>A：</strong> 根据目前的设置，<a href="https://mksport-portal.com">mk体育</a> 的域名和结构保持稳定，暂时没有迁移计划。</p>
+        <p><strong>Q：</strong> 页面内容是否会实时更新？<br>
+            <strong>A：</strong> 信息会按周或按事件进行更新，具体节奏取决于板块。建议定期访问以获取最新内容。</p>
+        <p style="margin-bottom: 0;"><strong>Q：</strong> 移动端体验如何？<br>
+            <strong>A：</strong> 页面采用响应式设计，在手机浏览器上阅读和操作都比较流畅。</p>
+    </div>
+
+    <!-- 温和结尾 -->
+    <div class="closing-note">
+        <p>无论你是因为什么原因找到这里，都希望这个入口能成为一个顺手、安静的存在。</p>
+        <p>如果你需要再度确认地址，<a href="https://mksport-portal.com">mk体育</a> 就在你刚刚看到的位置。</p>
+        <div class="small-meta">— 整理于 2025 · 仅作说明用途 —</div>
+    </div>
+
+</div>
+</body>
+</html>
